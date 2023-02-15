@@ -1,0 +1,118 @@
+.grid0{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 30px;
+}
+/* Responsive Design */
+@media (min-width: 1151px) {
+    .grid0{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width:851px) and (max-width:1150px){
+    .grid0{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:850px) {
+    .grid0{
+        grid-template-columns: 1fr 1fr;;
+    }
+}
+
+.grid1-1{
+    position: relative;
+}
+.time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 2px 3px 2px 3px;
+    right: 10px;
+    bottom: 13px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.video-picture{
+    width: 100%;
+}
+.grid2{
+    display: grid;
+    column-gap: 8px;
+    grid-template-columns: 35px 1fr;
+}
+.channel-picture{
+    margin-top: 10px;
+    width: 35px;
+    border-radius: 50%;
+}
+.highlight-tool{
+    position: relative;
+}
+.highlight-tool .highlight-box{
+    display: flex;
+    position: absolute;
+    padding-left: 10px;
+    height: 80px;
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.highlight-tool:hover .highlight-box{
+    opacity: 1;
+}
+.channel-picture-highlight{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.highlight-text{
+    display: flex;
+    flex-direction: column;
+}
+.highlight-box-text1{
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.highlight-box-text2{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(103, 103, 103);
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.grid3{
+    display: grid;
+    grid-template-rows: 1fr 17px 17px;
+    text-decoration: none;
+}
+.text1{
+    margin-bottom: 8px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    width: fit-content;
+}
+.text2{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(103, 103, 103);
+}
